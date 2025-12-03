@@ -3,6 +3,9 @@
 A simple project combining **Morse code** encoding/decoding with **LiFi (visible-light communication)** — sending and receiving text messages using visible light pulses (LED flickering). This project demonstrates how data can be transmitted wirelessly through light.
 
 ---
+## Demo Image
+
+<img src="https://github.com/MradulBhartiya/Lifi-Morse-Communication/blob/main/LiFi-Demo.jpg" width="300">
 
 ## 🔦 Overview
 
