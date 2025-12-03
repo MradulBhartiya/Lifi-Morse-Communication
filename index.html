@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Li-Fi Flashlight Transmitter</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div>
+        <h1>📡 Li-Fi Flashlight Transmitter</h1>
+        <p class="subtitle">Send text as Morse pulses using your phone flashlight. Open in Android Chrome.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <label for="msg" class="label">Message</label>
+      <textarea id="msg" placeholder="Type: HELLO WORLD!" maxlength="200"></textarea>
+
+      <div class="controls">
+        <div class="col">
+          <label class="label small">Unit speed (ms)</label>
+          <input id="unit" type="number" min="60" value="180">
+        </div>
+        <div class="col">
+          <label class="label small">Preview</label>
+          <pre id="preview" class="morse-preview">(empty)</pre>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button id="transmit" class="btn primary">🚀 TRANSMIT</button>
+        <button id="stop" class="btn ghost">⏹ STOP</button>
+      </div>
+
+      <div id="flash-indicator" class="flash-indicator" aria-hidden="true"></div>
+
+      <div class="info">
+        <h3>How to test</h3>
+        <ol>
+          <li>Open this page in <strong>Android Chrome</strong> (HTTPS recommended).</li>
+          <li>Tap <strong>TRANSMIT</strong>, grant camera permission when prompted.</li>
+          <li>Use STOP to immediately release the camera/torch.</li>
+        </ol>
+        <p class="warn">Safety: don't point bright flashlight at anyone's eyes.</p>
+      </div>
+    </section>
+
+    <footer class="small">Deploy: GitHub Pages / Netlify / Vercel — or host locally</footer>
+  </main>
+
+  <!-- Load module -->
+  <script type="module">
+    import { initUi } from "./static/script.js";
+    initUi();
+  </script>
+</body>
+</html>
